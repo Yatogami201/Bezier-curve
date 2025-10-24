@@ -26,10 +26,10 @@ public class BezierCurve extends JPanel {
 
     public BezierCurve() {
         controlPoints = new ArrayList<>();
-        controlPoints.add(new Point2D.Double(100, 100));
+        controlPoints.add(new Point2D.Double(0, 100));
         controlPoints.add(new Point2D.Double(200, 33));
         controlPoints.add(new Point2D.Double(-200, -33));
-        controlPoints.add(new Point2D.Double(0, -500));
+        controlPoints.add(new Point2D.Double(0, -100));
 
         initializeBinomialCache();
         generatePath();
@@ -205,3 +205,4 @@ public class BezierCurve extends JPanel {
         });
     }
 }
+
